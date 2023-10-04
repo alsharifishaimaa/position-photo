@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 body {
     background-color: teal;
     height: 100vh;
@@ -13,4 +19,59 @@ section{
     width: 600px;
     height: 600px;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+   
 }
+section div{
+    height: 200px;
+    width: 200px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+    box-sizing: border-box;
+    overflow: hidden;
+    position:relative ;
+}
+section div nav ul li a{
+    padding: 10px 0;
+    font-size: 20px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    color: rgba(41, 38, 38, 0.822);
+}
+section div nav ul li a:hover{
+    color: black;
+    text-shadow: #333;
+    font-size: 30px;
+}
+section>div img{
+    width: 100%;  
+    position: absolute;
+    transition: 0.7s;
+    opacity: 1;   
+}
+
+.up:hover img{
+    transform: translateY(-90%);
+    transition: 0.5s;
+
+}
+.right:hover img{
+    transform: translateX(90%);
+    transition: 0.5s;
+
+}
+.bottom:hover img{
+    transform: translateY(90%);
+    transition: 0.5s;
+}
+.left:hover img{
+    transform: translateX(-90%);
+    transition: 0.5s;
+}
+
+
+
+
+
