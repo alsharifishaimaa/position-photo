@@ -33,6 +33,13 @@ section div{
     overflow: hidden;
     position:relative ;
 }
+section div nav{
+    width: 200px;/* largeur de la nav*/
+    height: 200px;/* hauteur de la nav*/
+    display: flex;/*permet l'utilisation de justify-content et align-items*/
+    justify-content: center;/*va centrer la UL sur la largeur*/
+    align-items: center;/*va centrer la UL sur la hauteur*/
+}
 section div nav ul li a{
     padding: 10px 0;
     font-size: 20px;
@@ -48,6 +55,8 @@ section div nav ul li a:hover{
 section>div img{
     width: 100%;  
     position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.7s;
     opacity: 1;   
 }
